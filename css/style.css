@@ -1,0 +1,228 @@
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* bebas-neue-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebas-neue-v10-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue, Roboto Condensed";
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.hero {
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__wrapper {
+  max-width: 285px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.hero__title {
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 285px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.hero__btn {
+  padding: 12px 24px;
+  background-color: #1e90ff;
+  border: none;
+  gap: 12px;
+  cursor: pointer;
+  font-family: "Bebas Neue";
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.hero__btn:hover {
+  opacity: 0.8;
+}
+
+.hero__btn:active {
+  opacity: 0.6;
+}
+
+.main {
+  width: 50%;
+  padding: 54px;
+}
+
+.main__title {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 2px;
+  color: #222222;
+  margin-bottom: 24px;
+}
+
+.main__divider {
+  border: 1px solid #999999;
+  width: 492px;
+  margin-bottom: 24px;
+}
+
+.main__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.main__item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main__item-img {
+  border-radius: 4px;
+  width: 160px;
+  height: 90px;
+}
+
+.main__item-content {
+  padding: 16px;
+}
+
+.main__item-title {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 2px;
+  color: #222222;
+  margin-bottom: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main__item-title:hover {
+  color: #1e90ff;
+}
+
+.main__item-title:active {
+  opacity: 0.6;
+}
+
+.main__item-time {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main__item-time span {
+  display: flex;
+  align-items: center;
+  color: #888888;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  font-family: "Roboto Condensed";
+}
+
+.main__item-time span img {
+  margin-right: 4px;
+}
+
+.main__btn {
+  background-color: #1e90ff;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  font-family: "Roboto Condensed";
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main__btn:hover {
+  opacity: 0.8;
+}
+
+.main__btn:active {
+  opacity: 0.6;
+}
